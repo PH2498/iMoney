@@ -1,0 +1,27 @@
+{
+  "numTotalTests": 4,
+  "numPassedTests": 2,
+  "numFailedTests": 1,
+  "numPendingTests": 1,
+  "numTodoTests": 0,
+  "testResults": [
+    {
+      "name": "src/__tests__/math.test.ts",
+      "perfStats": { "runtime": 35, "slow": false },
+      "assertionResults": [
+        { "title": "should add 1+1", "status": "passed", "duration": 5, "failureMessages": [] },
+        { "title": "should fail on bad input", "status": "failed", "duration": 8,
+          "failureMessages": ["Error: expected 2 but received 3\n    at Object.&lt;anonymous&gt; (src/__tests__/math.test.ts:22:17)\n    at processTicksAndRejections"] },
+        { "title": "should skip", "status": "pending", "duration": 0, "failureMessages": [] }
+      ]
+    },
+    {
+      "name": "src/__tests__/string.test.ts",
+      "perfStats": { "runtime": 12, "slow": false },
+      "assertionResults": [
+        { "title": "should trim", "status": "passed", "duration": 3, "failureMessages": [] }
+      ]
+    }
+  ],
+  "success": false
+}

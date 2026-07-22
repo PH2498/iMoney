@@ -1,0 +1,24 @@
+# OpenSpec context for the iMoney repository.
+# This file anchors the change workspace used by openspec-propose / openspec-apply.
+
+context:
+  project: iMoney
+  language: TypeScript
+  runtime: Node.js
+  framework: Taro + React
+  build_tool: Vite
+  description: 记账小程序
+
+# Artifact-specific rules. Keep requirements testable and tasks executable.
+rules:
+  propose:
+    require_scenario_format: given_when_then
+  specs:
+    avoid_vague_terms: true
+    capture_edge_cases: true
+    mark_out_of_scope: true
+  tasks:
+    format: markdown_checkboxes
+    group_by_area: true
+    include_validation: true
+    do_not_mark_complete_during_propose: true

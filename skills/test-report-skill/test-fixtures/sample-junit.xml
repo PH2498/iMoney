@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="suite-1" tests="4" failures="1" errors="0" skipped="1" time="0.152">
+    <testcase classname="tests/calculator.test.js" name="should add two numbers" time="0.012"/>
+    <testcase classname="tests/calculator.test.js" name="should subtract two numbers" time="0.008">
+      <failure message="AssertionError: expected 5 but got 3">    at Object.&lt;anonymous&gt; (tests/calculator.test.js:15:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+    </testcase>
+    <testcase classname="tests/calculator.test.js" name="should multiply" time="0.015"/>
+    <testcase classname="tests/calculator.test.js" name="should skip this" time="0.001">
+      <skipped/>
+    </testcase>
+  </testsuite>
+</testsuites>
