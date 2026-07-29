@@ -1,0 +1,13 @@
+{
+  "name": "test-report-generator",
+  "version": "1.0.0",
+  "description": "测试报告生成器 - 解析测试结果并生成结构化标准报告",
+  "type": "module",
+  "main": "scripts/index.ts",
+  "bin": {
+    "test-report-generator": "scripts/index.ts"
+  },
+  "scripts": {
+    "report": "node --experimental-strip-types scripts/index.ts"
+  }
+}
